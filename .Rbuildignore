@@ -1,2 +1,12 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
+^docs$
+^README\.Rmd$
+^README-.*\.png$
+^data-raw$
+^_pkgdown\.yml$
+^CRAN-RELEASE$
+^pkgdown$
+^\.github$
+^CRAN-SUBMISSION$
