@@ -15,6 +15,3 @@
 # Help to build packages...............
 # usethis example https://emilhvitfeldt.com/post/2018-09-02-usethis-workflow-for-package-development/
 # and this: https://r-pkgs.org/data.html
-hello <- function() {
-  print("Hello, world!")
-}
