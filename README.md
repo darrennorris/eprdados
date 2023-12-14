@@ -10,8 +10,9 @@
 coverage](https://codecov.io/gh/darrennorris/eprdados/branch/master/graph/badge.svg)](https://app.codecov.io/gh/darrennorris/eprdados?branch=master)
 <!-- badges: end -->
 
-Conjuntos de dados para o ensino de Ecologia de Paisagens. Datasets for
-teaching landscape Ecology.
+Conjuntos de dados para o ensino de Ecologia de Paisagens.
+
+Datasets for teaching landscape Ecology.
 
 ## Installation
 
@@ -33,6 +34,8 @@ This is a basic example which shows you how to solve a common problem:
 library(eprdados)
 #> Loading required package: terra
 #> terra 1.7.55
+#> Loading required package: sf
+#> Linking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE
 ## basic example code
 ```
 
