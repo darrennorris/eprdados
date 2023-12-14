@@ -10,16 +10,18 @@
 coverage](https://codecov.io/gh/darrennorris/eprdados/branch/master/graph/badge.svg)](https://app.codecov.io/gh/darrennorris/eprdados?branch=master)
 <!-- badges: end -->
 
-The goal of eprdados is to …
+Conjuntos de dados para o ensino de Ecologia de Paisagens. Datasets for
+teaching landscape Ecology.
 
 ## Installation
 
 You can install the development version of eprdados from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/) with: Você pode instalar o pacote
+`eprdados` através do comando:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("darrennorris/eprdados")
+# install.packages("remotes")
+remotes::install_github("darrennorris/eprdados")
 ```
 
 ## Example
@@ -28,6 +30,8 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(eprdados)
+#> Loading required package: terra
+#> terra 1.7.55
 ## basic example code
 ```
 

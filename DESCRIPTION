@@ -1,11 +1,18 @@
 Package: eprdados
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Datasets for teaching Landscape Ecology
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: 
+    c(person(given = "Darren",
+           family = "Norris",
+           role = c("aut", "cre"),
+           email = "dnorris75@gmail.com",
+           comment = c(ORCID = ""))
+Maintainer: Darren Norris <dnorris75@gmail.com>
+Description: Diverse spatial datasets for demonstrating and teaching  data analysis used in Landscape Ecology. 
+    It includes R data of class sf (defined by the package 'sf'), and rast ('terra').
+    It also contains data stored in a range of file formats including GeoTiff and GeoPackage. 
+    Some of the datasets are designed to illustrate specific analysis techniques.
 License: CC0
 Encoding: UTF-8
 LazyData: true
@@ -15,5 +22,6 @@ Suggests:
 Config/testthat/edition: 3
 Language: en-US
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10), 
+    terra
 RoxygenNote: 7.2.3

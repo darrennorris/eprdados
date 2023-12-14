@@ -13,3 +13,4 @@
 ^LICENSE\.md$
 ^codecov\.yml$
 ^build_package_notes\.R$
+^raster_data\.R$
