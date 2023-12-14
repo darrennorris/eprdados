@@ -15,9 +15,10 @@ teaching landscape Ecology.
 
 ## Installation
 
-You can install the development version of eprdados from
-[GitHub](https://github.com/) with: Você pode instalar o pacote
-`eprdados` através do comando:
+You can install the development version of `eprdados` from
+[GitHub](https://github.com/) with:
+
+Você pode instalar o pacote `eprdados` através do comando:
 
 ``` r
 # install.packages("remotes")
