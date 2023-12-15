@@ -26,39 +26,48 @@ Você pode instalar o pacote `eprdados` através do comando:
 remotes::install_github("darrennorris/eprdados")
 ```
 
+## Data
+
+<img src="man/figures/README-mapa-tematica-1.png" width="100%" />
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to make a map with the data
+in the package:
 
 ``` r
 library(eprdados)
-#> Loading required package: terra
-#> terra 1.7.55
-#> Loading required package: sf
-#> Linking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE
-## basic example code
+library(tmap)
+mapbiomas_2020 <- rast(utm_cover_AP_rio_2020)
+
+# Reclassificação - 
+# Criar uma nova camada de floresta (novo objeto de raster copiando mapbiomas_2020, 
+# assim para ter os mesmos coordenados, resolução e extensão)
+floresta_2020 <- mapbiomas_2020
+# Todos os pixels com valor de 0
+values(floresta_2020) <- 0
+# Atualizar com valor de 1 quando pixels originais são de floresta (classe 3 e 4)
+floresta_2020[mapbiomas_2020==3 | mapbiomas_2020==4] <- 1 
+# Passo necessario para agilizar o processamento
+floresta_2020_modal <- aggregate(floresta_2020, 
+                                 fact=10, 
+                                 fun="modal")
+# pontos cada 5 km
+rio_pontos_31976 <- rio_pontos |> 
+  st_transform(31976) 
+# linha central de rios
+rio_linhacentral_31976 <- rio_linhacentral |> 
+  st_transform(31976)
+
+# Mapa
+tm_shape(floresta_2020_modal) +
+  tm_raster(style = "cat", 
+            palette = c("0" = "#E974ED", "1" ="#129912"), legend.show = FALSE) + 
+  tm_add_legend(type = "fill", labels = c("não-floresta", "floresta"),
+    col = c("#E974ED", "#129912"), title = "Classe") + 
+tm_shape(rio_linhacentral_31976) + 
+  tm_lines(col="blue") + 
+tm_shape(rio_pontos_31976) + 
+  tm_dots(size = 0.2, col = "yellow") + 
+tm_layout(legend.bg.color="white")
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.

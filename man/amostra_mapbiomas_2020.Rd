@@ -23,7 +23,7 @@ amostra_mapbiomas_2020
 A subset of data from MapBiomas Collection 6 classified land cover.
 }
 \examples{
-# plot to see the raster
+# plot to see the raster cover classes
 plot(rast(amostra_mapbiomas_2020))
 }
 \keyword{datasets}

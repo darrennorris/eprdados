@@ -12,7 +12,7 @@
 #' @source <https://brasil.mapbiomas.org/en/>
 #' @importFrom terra wrap
 #' @examples
-#' # plot to see the raster
+#' # plot to see the raster cover classes
 #' plot(rast(amostra_mapbiomas_2020))
 "amostra_mapbiomas_2020"
 
@@ -37,6 +37,6 @@
 #' @source <https://brasil.mapbiomas.org/en/>
 #' @importFrom terra wrap
 #' @examples
-#' # plot to see the raster
+#' # plot to see the raster cover classes
 #' plot(rast(utm_cover_AP_rio_2020))
 "utm_cover_AP_rio_2020"

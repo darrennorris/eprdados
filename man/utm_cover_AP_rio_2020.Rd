@@ -29,7 +29,7 @@ Yellow-spotted River Turtles ( https://doi.org/10.1002/aqc.3775).
 A subset of data from MapBiomas Collection 6 classified land cover.
 }
 \examples{
-# plot to see the raster
+# plot to see the raster cover classes
 plot(rast(utm_cover_AP_rio_2020))
 }
 \keyword{datasets}
