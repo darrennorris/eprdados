@@ -26,11 +26,11 @@ Você pode instalar o pacote `eprdados` através do comando:
 remotes::install_github("darrennorris/eprdados")
 ```
 
-## Data
+## Example
 
 <img src="man/figures/README-mapa-tematica-1.png" width="100%" />
 
-## Example
+------------------------------------------------------------------------
 
 This is a basic example which shows you how to make a map with the data
 in the package:

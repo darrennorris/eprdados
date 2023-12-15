@@ -36,7 +36,7 @@ Você pode instalar o pacote `eprdados` através do comando:
 remotes::install_github("darrennorris/eprdados")
 ```
 
-## Data
+## Example
 
 ```{r mapa-tematica, echo=FALSE, message=FALSE, warning=FALSE}
 library(tmap)
@@ -77,7 +77,7 @@ tm_shape(rio_pontos_31976) +
 tm_layout(legend.bg.color="white")
 ```
 
-## Example
+-----------------------------------------------------------------
 
 This is a basic example which shows you how to make a map with the data in the package:
 
