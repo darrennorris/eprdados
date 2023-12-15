@@ -8,6 +8,7 @@
 [![R-CMD-check](https://github.com/darrennorris/eprdados/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/darrennorris/eprdados/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/darrennorris/eprdados/branch/master/graph/badge.svg)](https://app.codecov.io/gh/darrennorris/eprdados?branch=master)
+[![pkgdown](https://github.com/darrennorris/eprdados/workflows/pkgdown/badge.svg)](https://github.com/darrennorris/eprdados/actions)
 <!-- badges: end -->
 
 Conjuntos de dados para o ensino de Ecologia de Paisagens.
