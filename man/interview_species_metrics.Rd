@@ -26,7 +26,7 @@ is a dataframe, with:
 interview_species_metrics
 }
 \description{
-Values for simulated species around property locations.
+Values for simulated species around rural property locations.
 Includes landscapemetrics for MapBiomas forest class.
 Metrics are calculated in buffers with radius of 0.25, 0.5, 1 and 10 km.
 To reduce influence of satellite image quality the metrics are median values from three years:
