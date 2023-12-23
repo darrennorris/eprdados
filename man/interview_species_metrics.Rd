@@ -27,10 +27,14 @@ interview_species_metrics
 }
 \description{
 Values for simulated species around rural property locations.
-Includes landscapemetrics for MapBiomas forest class.
-Metrics are calculated in buffers with radius of 0.25, 0.5, 1 and 10 km.
-To reduce influence of satellite image quality the metrics are median values from three years:
+Includes landscape metrics for MapBiomas forest cover class.
+Metrics are calculated in buffers with radius of:
+ 0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km.
+To reduce influence of satellite image quality, the metric values are
+median values from three years:
  study year, year before and year after.
+ Values for one metric cpland calculated using package landscapemetrics.
+ cpland is the percentage of core area of class in relation to the total landscape area.
 }
 \details{
 A sample of species abundances and landscapemetrics around properties.
