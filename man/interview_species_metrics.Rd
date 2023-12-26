@@ -29,7 +29,7 @@ interview_species_metrics
 \description{
 Values for simulated species around rural property locations in Amapá, Brazil.
 
-Abundances and presence absence of 11 species simulated using package [virtualspecies](https://github.com/Farewe/virtualspecies) .
+Abundances and presence absence of 11 species simulated using package \href{https://github.com/Farewe/virtualspecies}{virtualspecies} .
 The species have contrasting responses to forest cover.
 The response patterns follow those known for primate and carnivore species (Michalski & Peres 2005; Michalski & Peres 2007).
 

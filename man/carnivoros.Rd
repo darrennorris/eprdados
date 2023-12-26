@@ -29,7 +29,7 @@ carnivoros
 \description{
 Values for simulated species around rural property locations in Amapá, Brazil.
 
-Abundances and presence absence of 3 carnivore species simulated using package virtualspecies.
+Abundances and presence absence of 3 carnivore species simulated using package \href{virtualspecies}{https://github.com/Farewe/virtualspecies}.
 The three species have contrasting responses to forest cover.
 The response patterns follow those known for carnivore species (Michalski & Peres 2005).
 
