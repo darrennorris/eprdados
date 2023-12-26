@@ -29,6 +29,9 @@ remotes::install_github("darrennorris/eprdados")
 
 ## Example
 
+    #> |---------|---------|---------|---------|=========================================                                          
+    #> |---------|---------|---------|---------|=========================================                                          |---------|---------|---------|---------|=========================================                                          |---------|---------|---------|---------|=========================================                                          |---------|---------|---------|---------|=========================================                                          
+
 <img src="man/figures/README-mapa-tematica-1.png" width="100%" />
 
 ------------------------------------------------------------------------
@@ -72,3 +75,8 @@ tm_shape(rio_pontos_31976) +
   tm_dots(size = 0.2, col = "yellow") + 
 tm_layout(legend.bg.color="white")
 ```
+
+Package developed and built using the following guides: Fan Wang:
+<https://fanwangecon.github.io/PkgTestR/articles/ffv_pkgdown_github.html>
+and Emil Hvitfeldt:
+<https://emilhvitfeldt.com/post/2018-09-02-usethis-workflow-for-package-development/>
