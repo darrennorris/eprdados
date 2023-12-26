@@ -1,4 +1,4 @@
-#' A sample of MapBiomas Collection 6 data
+#' A small sample of MapBiomas Collection 6 data
 #'
 #' A subset of data from MapBiomas Collection 6 classified land cover.
 #'
@@ -13,7 +13,8 @@
 #' @importFrom terra wrap
 #' @examples
 #' # plot to see the raster cover classes
-#' plot(rast(amostra_mapbiomas_2020))
+#' # internal raster data needs to be read
+#' plot(terra::rast(amostra_mapbiomas_2020))
 "amostra_mapbiomas_2020"
 
 
@@ -38,5 +39,6 @@
 #' @importFrom terra wrap
 #' @examples
 #' # plot to see the raster cover classes
-#' plot(rast(utm_cover_AP_rio_2020))
+#' # internal raster data needs to be read
+#' plot(terra::rast(utm_cover_AP_rio_2020))
 "utm_cover_AP_rio_2020"

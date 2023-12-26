@@ -28,16 +28,18 @@ carnivoros
 }
 \description{
 Values for simulated species around rural property locations in Amapá, Brazil.
-Includes landscape metrics for MapBiomas forest cover class.
-Metrics are calculated in buffers with radius of:
- 0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km.
-To reduce influence of satellite image quality, the metric values are
-median values from three years:
- study year, year before and year after.
- Values for one metric cpland calculated using package landscapemetrics.
- cpland is the percentage of core area of forest class in relation to the total landscape area.
 
- Abundances and presence absence of 3 species simulated using package virtualspecies.
+Abundances and presence absence of 3 carnivore species simulated using package virtualspecies.
+The three species have contrasting responses to forest cover.
+The response patterns follow those known for carnivore species (Michalski & Peres 2005).
+
+Values for one metric \code{cpland} calculated using package  \href{https://r-spatialecology.github.io/landscapemetrics/}{landscapemetrics}.
+\code{cpland} is the percentage of core area of class in relation to the total landscape area.
+Landscape metric from \href{https://brasil.mapbiomas.org/}{MapBiomas} forest cover class.
+Metrics are calculated around each property in buffers with radius of:
+ 0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km. To reduce influence of satellite
+ image quality, the metric values are median values from three years:
+ study year, year before and year after.
 }
 \details{
 A subset of three carnivore species abundances and landscape metrics around properties.
@@ -47,5 +49,15 @@ A subset of three carnivore species abundances and landscape metrics around prop
 table(carnivoros$buff_dist_km)
 # check data. 106 properties x 8 buffer distances = 848
 table(carnivoros$sp_name)
+}
+\references{
+Michalski, F., Boulhosa, R. L. P., Nascimento, Y. N. D., & Norris, D. (2020).
+Rural wage-earners’ attitudes towards diverse wildlife groups differ between tropical ecoregions:
+implications for forest and savanna conservation in the Brazilian Amazon.
+Tropical Conservation Science, 13, https://doi.org/10.1177/1940082920971747.
+
+Michalski, F., & Peres, C. A. (2005).
+Anthropogenic determinants of primate and carnivore local extinctions in a fragmented forest landscape of southern Amazonia.
+Biological conservation, 124(3), 383-396. https://doi.org/10.1016/j.biocon.2005.01.045
 }
 \keyword{datasets}

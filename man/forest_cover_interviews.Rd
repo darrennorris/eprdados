@@ -26,13 +26,14 @@ forest_cover_interviews
 \description{
 Forest cover around rural property locations in Amapá, Brazil.
 Includes landscape metrics for MapBiomas forest cover class.
-Metrics are calculated in buffers with radius of:
- 0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km.
-To reduce influence of satellite image quality, the metric values are
-median values from three years:
+
+Values for one metric \code{cpland} calculated using package  \href{https://r-spatialecology.github.io/landscapemetrics/}{landscapemetrics}.
+\code{cpland} is the percentage of core area of class in relation to the total landscape area.
+Landscape metric from \href{https://brasil.mapbiomas.org/}{MapBiomas} forest cover class.
+Metrics are calculated around each property in buffers with radius of:
+ 0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km. To reduce influence of satellite
+ image quality, the metric values are median values from three years:
  study year, year before and year after.
- Values for one metric cpland calculated using package landscapemetrics.
- cpland is the percentage of core area of forest class in relation to the total landscape area.
 }
 \details{
 A subset of forest cover landscape metrics around properties.
@@ -40,5 +41,11 @@ A subset of forest cover landscape metrics around properties.
 \examples{
 # check data. 106 properties and 8 buffer distances.
 table(forest_cover_interviews$buff_dist_km)
+}
+\references{
+Michalski, F., Boulhosa, R. L. P., Nascimento, Y. N. D., & Norris, D. (2020).
+Rural wage-earners’ attitudes towards diverse wildlife groups differ between tropical ecoregions:
+implications for forest and savanna conservation in the Brazilian Amazon.
+Tropical Conservation Science, 13, https://doi.org/10.1177/1940082920971747.
 }
 \keyword{datasets}

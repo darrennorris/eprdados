@@ -30,6 +30,7 @@ A subset of data from MapBiomas Collection 6 classified land cover.
 }
 \examples{
 # plot to see the raster cover classes
-plot(rast(utm_cover_AP_rio_2020))
+# internal raster data needs to be read
+plot(terra::rast(utm_cover_AP_rio_2020))
 }
 \keyword{datasets}

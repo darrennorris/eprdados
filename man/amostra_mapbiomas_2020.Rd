@@ -3,7 +3,7 @@
 \docType{data}
 \name{amostra_mapbiomas_2020}
 \alias{amostra_mapbiomas_2020}
-\title{A sample of MapBiomas Collection 6 data}
+\title{A small sample of MapBiomas Collection 6 data}
 \format{
 `amostra_mapbiomas_2020`
 is a raster with 8 rows and 9 columns:
@@ -24,6 +24,7 @@ A subset of data from MapBiomas Collection 6 classified land cover.
 }
 \examples{
 # plot to see the raster cover classes
-plot(rast(amostra_mapbiomas_2020))
+# internal raster data needs to be read
+plot(terra::rast(amostra_mapbiomas_2020))
 }
 \keyword{datasets}
