@@ -39,7 +39,7 @@ remotes::install_github("darrennorris/eprdados")
 
 ## Example
 
-```{r mapa-tematica, echo=FALSE, message=FALSE, warning=FALSE}
+```{r mapa-tematica, echo=FALSE, message=FALSE, results='hide', warning=FALSE}
 library(tmap)
 library(terra)
 library(sf)
