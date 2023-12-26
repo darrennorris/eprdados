@@ -76,7 +76,15 @@ tm_shape(rio_pontos_31976) +
 tm_layout(legend.bg.color="white")
 ```
 
-Package developed and built using the following guides: Fan Wang:
-<https://fanwangecon.github.io/PkgTestR/articles/ffv_pkgdown_github.html>
-and Emil Hvitfeldt:
-<https://emilhvitfeldt.com/post/2018-09-02-usethis-workflow-for-package-development/>
+Package developed and built using the following guides:
+
+- Fan Wang:
+  <https://fanwangecon.github.io/PkgTestR/articles/ffv_pkgdown_github.html>
+  and
+
+- Emil Hvitfeldt:
+  <https://emilhvitfeldt.com/post/2018-09-02-usethis-workflow-for-package-development/>
+  and
+
+- Saskia O:
+  <https://www.marinedatascience.co/blog/2020/01/09/checklist-for-r-package-re-submissions-on-cran/>
