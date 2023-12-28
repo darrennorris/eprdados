@@ -67,3 +67,33 @@
 #' # total length of rivers (262276.4 [m])
 #' sum(st_length(rio_linhacentral))
 "rio_linhacentral"
+
+
+#' Interview locations.
+#'
+#' Location of 106 interviews.
+#'
+#' @description
+#'
+#' Point locations of 106 rural properties in Amapá, Brazil.
+#'
+#' @format `entrevistas`
+#' is a sf POINT geometry,
+#' with 106 locations and 2 variables:
+#' \describe{
+#'   \item{aid}{Unique identifier.}
+#'   \item{Habitat_WWF}{Terrestrial ecoregion. https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2}
+#' }
+#'
+#' @references
+#' Michalski, F., Boulhosa, R. L. P., Nascimento, Y. N. D., & Norris, D. (2020).
+#' Rural wage-earners’ attitudes towards diverse wildlife groups differ between tropical ecoregions:
+#' implications for forest and savanna conservation in the Brazilian Amazon.
+#' Tropical Conservation Science, 13, https://doi.org/10.1177/1940082920971747.
+#'
+#' @source <https://fmichalski.wixsite.com/lecov>
+#' @importFrom sf st_read
+#' @examples
+#' # check data. 106 properties and 2 ecoregions.
+#' table(entrevistas$Habitat_WWF)
+"entrevistas"

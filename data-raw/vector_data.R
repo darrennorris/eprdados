@@ -29,3 +29,18 @@ st_layers("inst/vector/river_sample.gpkg")
 # export
 usethis::use_data(rio_pontos, overwrite = TRUE)
 usethis::use_data(rio_linhacentral, overwrite = TRUE)
+
+# -------------------------------------------------------------------------
+# interview points.
+interview_species_metrics <- read.csv("data-raw/species_interviews_forest.csv")
+entrevistas <- interview_species_metrics |>
+  group_by(aid, Latitude, Longitude) |>
+  summarise(acount = n()) |>
+  left_join(interview_species_metrics |>
+              group_by(aid, Latitude, Longitude, Habitat_WWF) |>
+              summarise(acount = n()) |>
+              ungroup()) |>
+  select(!acount) |>
+  st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326)
+
+usethis::use_data(entrevistas, overwrite = TRUE)

@@ -11,7 +11,7 @@ is a dataframe, with:
   \item{aid}{Property identifier.}
   \item{long}{Longitude. Decimal degrees (EPSG:4326).}
   \item{lat}{Latitude. Decimal degrees (EPSG:4326).}
-  \item{lat}{Habitat_WWF. Terrestrial ecoregion. https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2}
+  \item{Habitat_WWF}{Terrestrial ecoregion. https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2}
   \item{metric}{Metric identifier from landscapemetrics.}
   \item{buff_dist_km}{Buffer distance. Radius in km.}
   \item{value_median}{Median value of landscape metric.}
