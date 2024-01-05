@@ -17,6 +17,7 @@ Description: Diverse spatial datasets for demonstrating and teaching  data analy
 License: CC0
 Encoding: UTF-8
 LazyData: true
+LazyDataCompression: bzip2
 Suggests: 
     spelling,
     testthat (>= 3.0.0)

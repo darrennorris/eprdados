@@ -67,6 +67,7 @@ floresta_2020[utm_cover_AP_rio_2020==3 | utm_cover_AP_rio_2020==4] <- 1
 amostras_metrica <- sample_lsm(floresta_2020,
                                y = rio_pontos_buff,
                                plot_id = data.frame(rio_pontos_buff)[, "raio"],
-                               metric = "cpland")
+                               metric = "cpland") |>
+  rename("raio" = "plot_id")
 # export
 usethis::use_data(amostras_metrica, overwrite = TRUE)
