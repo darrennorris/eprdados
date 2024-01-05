@@ -42,3 +42,30 @@
 #' # internal raster data needs to be read
 #' plot(terra::rast(utm_cover_AP_rio_2020))
 "utm_cover_AP_rio_2020"
+
+#' MapBiomas Collection 6 forest cover.
+#'
+#' A reclassified subset of data from MapBiomas Collection 6.
+#'
+#' @description
+#' The sample covers an area upstream of the Cachoeira Caldeirão Dam.
+#' This area has been studied to understand dam impacts on species including
+#' Giant Otters (https://doi.org/10.7717/peerj.14287) and
+#' Yellow-spotted River Turtles ( https://doi.org/10.1002/aqc.3775).
+#'
+#' @format `floresta_2020`
+#' Is a binary reclassification of utm_cover_AP_rio_2020.
+#' Is a raster where values of 1 include both forest and savanna formations.
+#' The raster has 5727 rows and 6059 columns:
+#' \describe{
+#'   \item{location}{Amapá, Brazil}
+#'   \item{coord. ref}{SIRGAS 2000 / UTM zone 22N (EPSG:31976)}
+#'   \item{year}{2020}
+#' }
+#' @source <https://brasil.mapbiomas.org/en/>
+#' @importFrom terra wrap
+#' @examples
+#' # plot to see the raster cover classes
+#' # internal raster data needs to be read
+#' plot(terra::rast(floresta_2020))
+"floresta_2020"

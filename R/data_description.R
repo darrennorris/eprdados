@@ -145,3 +145,36 @@
 #' # check data. 106 properties and 8 buffer distances.
 #' table(forest_cover_interviews$buff_dist_km)
 "forest_cover_interviews"
+
+#' Landscape metric around a point.
+#'
+#' Values of a landscape metric calculated around a point.
+#'
+#' @description
+#' Landscape metric calculated within a series of circular buffers around a
+#' single point along a river centerline, upstream of the Cachoeira Caldeirão Dam, Amapá, Brazil.
+#'
+#' Values for one metric \code{cpland} calculated using package  \href{https://r-spatialecology.github.io/landscapemetrics/}{landscapemetrics}.
+#' \code{cpland} is the percentage of core area of class in relation to the total landscape area.
+#' Landscape metric from \href{https://brasil.mapbiomas.org/}{MapBiomas} forest cover class.
+#' Metrics are calculated within each buffer radii:
+#'  0.125, 0.25, 0.5, 1, 2, 4, 8 and 16 km.
+#'
+#' @format `amostras_metrica`
+#' is a tibble, with:
+#' \describe{
+#'   \item{layer}{Identifier for raster layer.}
+#'   \item{level}{Level of metric.}
+#'   \item{class}{Cover class from landscape raster.}
+#'   \item{id}{identifier from landscapemetrics.}
+#'   \item{metric}{Metric identifier from landscapemetrics.}
+#'   \item{value}{Value of landscape metric.}
+#'   \item{plot_id}{Identifier. Buffer distance. Radius in m.}
+#'   \item{percentage_inside}{From landscapemetrics.}
+#' }
+#' @source <https://fmichalski.wixsite.com/lecov>
+#'
+#' @examples
+#' # check data
+#' table(amostras_metrica$raio)
+"amostras_metrica"
