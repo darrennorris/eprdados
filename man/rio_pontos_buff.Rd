@@ -22,7 +22,7 @@ is sf POLYGON geometry with 7 polygons and 9 fields, including:
 rio_pontos_buff
 }
 \description{
-Circular buffers around a sample points along centerline of rivers upstream of the
+Circular buffers around a sample point along centerline of rivers upstream of the
 Cachoeira Caldeirão Dam.
 A total of 7 buffers with different radii.
 \describe{
@@ -36,5 +36,14 @@ Buffers around a sample point along the Araguari river.
 \examples{
 # plot to see the points
 plot(rio_pontos_buff["raio"])
+
+# visualize overlapping buffers with ggplot2
+library(ggplot2)
+rio_pontos_buff |>
+# Arrange according to radius attribute in descending order
+dplyr::arrange(desc(raio)) |>
+# Make ggplot and set fill color to radius
+ggplot(aes(fill = raio)) +
+geom_sf()
 }
 \keyword{datasets}

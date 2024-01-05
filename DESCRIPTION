@@ -20,7 +20,9 @@ LazyData: true
 LazyDataCompression: bzip2
 Suggests: 
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    ggplot2,
+    dplyr
 Config/testthat/edition: 3
 Language: en-US
 Depends: 

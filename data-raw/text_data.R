@@ -54,7 +54,7 @@ rio_pontos_buff <- bind_rows(st_buffer(rio_pontos_31976[1, ],
                                mutate(raio = 8000),
                              st_buffer(rio_pontos_31976[1, ],
                                        dist = 16000) |>
-                               mutate(raio = 1600)
+                               mutate(raio = 16000)
 )
 # binary raster
 utm_cover_AP_rio_2020 <- rast("inst/raster/utm_cover_AP_rio_2020.tif")
