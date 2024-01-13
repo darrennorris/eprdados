@@ -6,7 +6,7 @@ library(usethis)
 
 # GPKG with river center line and sample points used in Métricas
 mypath <- "yourpathhere"
-mypath <- "C:\\Users\\user\\Documents\\Articles\\gis_layers\\gisdata\\inst\\vector\\rivers.gpkg"
+#mypath <- "C:\\Users\\user\\Documents\\Articles\\gis_layers\\gisdata\\inst\\vector\\rivers.gpkg"
 # subzone midpoints
 rsm <- sf::st_read(mypath, layer = "midpoints")
 # linha central de rios
@@ -68,13 +68,13 @@ usethis::use_data(rio_linhacentral, overwrite = TRUE)
 # interview points.
 interview_species_metrics <- read.csv("data-raw/species_interviews_forest.csv")
 entrevistas <- interview_species_metrics |>
-  group_by(aid, Latitude, Longitude) |>
-  summarise(acount = n()) |>
-  left_join(interview_species_metrics |>
-              group_by(aid, Latitude, Longitude, Habitat_WWF) |>
+  group_by(aid, Latitude, Longitude, Habitat_WWF) |>
               summarise(acount = n()) |>
-              ungroup()) |>
+              ungroup() |>
   select(!acount) |>
-  st_as_sf(coords = c("Longitude", "Latitude"), crs = 4326)
+  st_as_sf(coords = c("Longitude", "Latitude"),
+           crs = 4326,
+           agr = c(aid = "identity", Habitat_WWF = "constant")
+           )
 
 usethis::use_data(entrevistas, overwrite = TRUE)
