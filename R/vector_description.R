@@ -171,3 +171,27 @@
 #' # check data. 106 properties and 2 ecoregions.
 #' table(entrevistas$Habitat_WWF)
 "entrevistas"
+
+
+#' Dams and reservoirs
+#'
+#' Locations of four dams and the reservoirs in Amapá, Brazil.
+#' @format A `gpkg` file with 11 layers.
+#' \describe{
+#'   \item{AP_reservatorios}{Reservoir polyogns from ANA 2020. Massas d'Água: https://metadados.snirh.gov.br/files/7d054e5a-8cc9-403c-9f1a-085fd933610c/geoft_bho_massa_dagua_v2019.zip .}
+#'   \item{AP_reservatorios_ANEEL}{Reservoir polyogns from ANEEL 2023. https://sigel.aneel.gov.br/portal/home/index.html .}
+#'   \item{AP_UHE}{Dam poiints from ANEEL 2023. https://sigel.aneel.gov.br/portal/home/index.html .}
+#' }
+#' @name barragens
+#' @docType data
+#' @examples
+#' \donttest{
+#' # check layers
+#' st_layers(system.file("vector/barragens.gpkg", package="eprdados"))
+#' # load dam locations
+#' uhe <- st_read(system.file("vector/barragens.gpkg", package="eprdados"), layer ="AP_UHE")
+#' # take a look
+#' library(mapview)
+#' mapview(uhe)
+#' }
+NULL

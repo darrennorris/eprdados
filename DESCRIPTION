@@ -22,6 +22,7 @@ Suggests:
     spelling,
     testthat (>= 3.0.0),
     ggplot2,
+    mapview,
     dplyr
 Config/testthat/edition: 3
 Language: en-US
