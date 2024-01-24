@@ -195,3 +195,29 @@
 #' mapview(uhe)
 #' }
 NULL
+
+
+#' Ferreira Gomes dam
+#'
+#' Collection of patial data from around the Ferreria Gomes dam in Amapá, Brazil.
+#' @format A `gpkg` file with 8 layers.
+#' \describe{
+#'    \item{fg_extensao}{Polygon with the extension from a 32 km buffer around the reservoir.}
+#'   \item{FG_reservatorio}{Reservoir polyogns from ANA 2020. Massas d'Água: https://metadados.snirh.gov.br/files/7d054e5a-8cc9-403c-9f1a-085fd933610c/geoft_bho_massa_dagua_v2019.zip .}
+#'   \item{FG_reservatorio_ANEEL}{Reservoir polyogns from ANEEL 2023. https://sigel.aneel.gov.br/portal/home/index.html .}
+#'   \item{FG_ponto}{Dam point from ANEEL 2023. https://sigel.aneel.gov.br/portal/home/index.html .}
+#' }
+#' @name UHE_Ferreira_Gomes
+#' @docType data
+#' @examples
+#' \donttest{
+#' # check layers
+#' st_layers(system.file("vector/UHE_Ferreira_Gomes.gpkg", package="eprdados"))
+#' # load dam location
+#' uhe_fg <- st_read(system.file("vector/UHE_Ferreira_Gomes.gpkg", package="eprdados"),
+#' layer ="FG_ponto")
+#' # take a look
+#' library(mapview)
+#' mapview(uhe_fg)
+#' }
+NULL
