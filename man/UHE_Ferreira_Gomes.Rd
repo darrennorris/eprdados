@@ -14,7 +14,7 @@ A `gpkg` file with 8 layers.
 }
 }
 \description{
-Collection of patial data from around the Ferreria Gomes dam in Amapá, Brazil.
+Collection of data from around the Ferreria Gomes dam in Amapá, Brazil.
 }
 \examples{
 \donttest{

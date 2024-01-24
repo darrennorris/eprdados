@@ -199,7 +199,7 @@ NULL
 
 #' Ferreira Gomes dam
 #'
-#' Collection of patial data from around the Ferreria Gomes dam in Amapá, Brazil.
+#' Collection of data from around the Ferreria Gomes dam in Amapá, Brazil.
 #' @format A `gpkg` file with 8 layers.
 #' \describe{
 #'    \item{fg_extensao}{Polygon with the extension from a 32 km buffer around the reservoir.}
