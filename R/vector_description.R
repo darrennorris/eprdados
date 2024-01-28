@@ -221,3 +221,25 @@ NULL
 #' mapview(uhe_fg)
 #' }
 NULL
+
+#' AMCEL plantation
+#'
+#' Polygon of the AMCEL - Amapá Florestal e Celulose S.A. plantation forests Amapá, Brazil.
+#' @format A `gpkg` file with 1 layer.
+#' \describe{
+#'    \item{amcel}{Polygon of the plantation.}
+#' }
+#' @name amcel
+#' @docType data
+#' @examples
+#' \donttest{
+#' # check layers
+#' famcel <- system.file("vector/amcel.gpkg", package="eprdados")
+#' st_layers(famcel)
+#' # load polygon
+#' amcel <- st_read(famcel, layer ="amcel")
+#' # take a look
+#' library(mapview)
+#' mapview(amcel)
+#' }
+NULL

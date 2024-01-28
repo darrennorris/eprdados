@@ -263,3 +263,13 @@ st_write(FG_massa_de_agua,
          layer = "FG_massa_de_agua", delete_layer = TRUE,
          append = TRUE)
 st_layers("inst/vector/UHE_Ferreira_Gomes.gpkg")
+
+#### AMCEL    ------------------------------------------
+amfile <- "C:\\Users\\user\\Documents\\Articles\\gis_layers\\shapes\\rivers\\amcelap.shp"
+amcel <- read_sf(amfile)
+st_write(amcel,
+         dsn = "inst/vector/amcel.gpkg",
+         layer = "amcel", delete_layer = TRUE,
+         append = TRUE)
+st_layers("inst/vector/amcel.gpkg")
+
