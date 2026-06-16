@@ -273,3 +273,13 @@ st_write(amcel,
          append = TRUE)
 st_layers("inst/vector/amcel.gpkg")
 
+#### UNIFAP Marco Zero Campus
+source_file <- "C:\\Users\\user\\Documents\\CA\\unifap_campus\\marco_zero_2026_31982.gpkg"
+destination_folder <- "inst/vector/marco_zero_2026_31982.gpkg"
+
+# 2. Copy the file
+# overwrite = TRUE ensures it replaces the file if it already exists in the destination
+success <- file.copy(from = source_file,
+                     to = destination_folder,
+                     overwrite = TRUE)
+sf::st_layers(source_file)

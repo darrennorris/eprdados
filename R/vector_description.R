@@ -243,3 +243,25 @@ NULL
 #' mapview(amcel)
 #' }
 NULL
+
+#' Marco Zero
+#'
+#' Multiple layers of the Marco Zero Campus, Amapá, Brazil.
+#' @format A `gpkg` file with 16 layers.
+#' \describe{
+#'    \item{marco_zero_2026_31982}{Polygons and points.}
+#' }
+#' @name marco_zero_2026_31982
+#' @docType data
+#' @examples
+#' \donttest{
+#' # check layers
+#' fmz <- system.file("vector/marco_zero_2026_31982.gpkg", package="eprdados")
+#' st_layers(fmz)
+#' # load polygon
+#' campus <- st_read(fmz, layer ="campus")
+#' # take a look
+#' library(mapview)
+#' mapview(campus)
+#' }
+NULL
