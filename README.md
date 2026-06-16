@@ -9,6 +9,7 @@
 [![Codecov test
 coverage](https://codecov.io/gh/darrennorris/eprdados/branch/master/graph/badge.svg)](https://app.codecov.io/gh/darrennorris/eprdados?branch=master)
 [![pkgdown](https://github.com/darrennorris/eprdados/workflows/pkgdown/badge.svg)](https://github.com/darrennorris/eprdados/actions)
+[![R-CMD-check](https://github.com/darrennorris/eprdados/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/darrennorris/eprdados/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Conjuntos de dados para o ensino de Ecologia de Paisagens.
@@ -29,7 +30,7 @@ remotes::install_github("darrennorris/eprdados")
 
 ## Example
 
-<img src="man/figures/README-mapa-tematica-1.png" width="100%" />
+<img src="man/figures/README-mapa-tematica-1.png" alt="" width="100%" />
 
 ------------------------------------------------------------------------
 
