@@ -1,63 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/404.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/index.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/UHE_Ferreira_Gomes.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/amcel.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/amostra_mapbiomas_2020.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/amostras_metrica.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/barragens.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/carnivoros.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/entrevistas.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/floresta_2020.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/forest_cover_interviews.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/interview_species_metrics.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/rio_linhacentral.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/rio_pontos.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/rio_pontos_31976.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/rio_pontos_buff.html</loc>
-  </url>
-  <url>
-    <loc>https://darrennorris.github.io/eprdados/reference/utm_cover_AP_rio_2020.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://darrennorris.github.io/eprdados/404.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/LICENSE.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/authors.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/index.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/UHE_Ferreira_Gomes.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/amcel.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/amostra_mapbiomas_2020.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/amostras_metrica.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/barragens.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/carnivoros.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/entrevistas.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/floresta_2020.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/forest_cover_interviews.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/index.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/interview_species_metrics.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/marco_zero_2026_31982.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/rio_linhacentral.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/rio_pontos.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/rio_pontos_31976.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/rio_pontos_buff.html</loc></url>
+<url><loc>https://darrennorris.github.io/eprdados/reference/utm_cover_AP_rio_2020.html</loc></url>
 </urlset>
+
