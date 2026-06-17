@@ -60,15 +60,20 @@ rio_linhacentral_31976 <- rio_linhacentral |>
 
 # Mapa
 tm_shape(floresta_2020_modal) +
-  tm_raster(style = "cat", 
-            palette = c("0" = "#E974ED", "1" ="#129912"), legend.show = FALSE) + 
-  tm_add_legend(type = "fill", labels = c("não-floresta", "floresta"),
-    col = c("#E974ED", "#129912"), title = "Classe") + 
+  tm_raster(col.scale = tm_scale_categorical(values = c("0" = "#E974ED", "1" ="#129912"), 
+                                             labels = c("Não-floresta", "Floresta")), 
+            col.legend = tm_legend(
+      title = "Classe",
+      position = tm_pos_in("right", "top"),
+      bg.color = "white",
+      frame = TRUE
+    )
+              ) + 
 tm_shape(rio_linhacentral_31976) + 
   tm_lines(col="blue") + 
 tm_shape(rio_pontos_31976) + 
-  tm_dots(size = 0.2, col = "yellow") + 
-tm_layout(legend.bg.color="white")
+  tm_dots(size = 0.2, fill = "yellow") + 
+tm_layout(legend.outside = FALSE)
 ```
 
 Package developed and built using the following guides:
