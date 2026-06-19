@@ -69,3 +69,54 @@
 #' # internal raster data needs to be read
 #' plot(terra::rast(floresta_2020))
 "floresta_2020"
+
+#' Marco Zero Campus in 3 classes.
+#'
+#' A classification of the Marco Zero Campus.
+#'
+#' @description
+#' This is to do.
+#' This is to do.
+#' This is to do.
+#' This is to do.
+#'
+#' @format `class_3`
+#' Is a classification of landcover.
+#' The raster has 148 rows and 268 columns:
+#' \describe{
+#'   \item{location}{Amapá, Brazil}
+#'   \item{coord. ref}{SIRGAS 2000 / UTM zone 22S (EPSG:31982)}
+#'   \item{year}{2025}
+#' }
+#' @importFrom terra wrap
+#' @examples
+#' # plot to see the raster cover classes
+#' # internal raster data needs to be read
+#' plot(terra::rast(class_3))
+"class_3"
+
+#' Marco Zero Campus in 5 classes.
+#'
+#' A classification of the Marco Zero Campus.
+#'
+#' @description
+#' This is to do.
+#' This is to do.
+#' This is to do.
+#' This is to do.
+#'
+#' @format `class_5`
+#' Is a classification of landcover.
+#' The raster has 148 rows and 268 columns:
+#' \describe{
+#'   \item{location}{Amapá, Brazil}
+#'   \item{coord. ref}{SIRGAS 2000 / UTM zone 22S (EPSG:31982)}
+#'   \item{year}{2025}
+#' }
+#' @importFrom terra wrap
+#' @examples
+#' # plot to see the raster cover classes
+#' # internal raster data needs to be read
+#' plot(terra::rast(class_5))
+"class_5"
+

@@ -58,7 +58,7 @@ rio_pontos_31976 <- rio_pontos |>
 rio_linhacentral_31976 <- rio_linhacentral |> 
   st_transform(31976)
 
-# Mapa
+# Mapa com tmap v4
 tm_shape(floresta_2020_modal) +
   tm_raster(col.scale = tm_scale_categorical(values = c("0" = "#E974ED", "1" ="#129912"), 
                                              labels = c("Não-floresta", "Floresta")), 

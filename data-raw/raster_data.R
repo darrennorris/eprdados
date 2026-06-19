@@ -27,3 +27,15 @@ floresta_2020[utm_cover_AP_rio_2020==3 | utm_cover_AP_rio_2020==4] <- 1
 floresta_2020 <- wrap(floresta_2020)
 # export
 usethis::use_data(floresta_2020, overwrite = TRUE)
+
+# Marco Zero Campus
+class_3 <- rast("inst/raster/class_3.tif")
+class_3 <- wrap(class_3)
+# export
+usethis::use_data(class_3, overwrite = TRUE)
+
+# With 5 classes
+class_5 <- rast("inst/raster/class_5.tif")
+class_5 <- wrap(class_5)
+# export
+usethis::use_data(class_5, overwrite = TRUE)

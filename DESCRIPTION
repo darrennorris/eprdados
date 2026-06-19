@@ -27,8 +27,8 @@ Suggests:
 Config/testthat/edition: 3
 Language: en-US
 Depends: 
-    R (>= 2.10), 
-    terra, 
+    R (>= 3.5),
+    terra,
     sf
 URL: https://darrennorris.github.io/eprdados/
 Config/roxygen2/version: 8.0.0
