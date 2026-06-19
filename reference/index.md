@@ -14,6 +14,10 @@
   : Dams and reservoirs
 - [`carnivoros`](https://darrennorris.github.io/eprdados/reference/carnivoros.md)
   : Carnivore species and landscape metrics.
+- [`class_3`](https://darrennorris.github.io/eprdados/reference/class_3.md)
+  : Marco Zero Campus in 3 classes.
+- [`class_5`](https://darrennorris.github.io/eprdados/reference/class_5.md)
+  : Marco Zero Campus in 5 classes.
 - [`entrevistas`](https://darrennorris.github.io/eprdados/reference/entrevistas.md)
   : Interview locations.
 - [`floresta_2020`](https://darrennorris.github.io/eprdados/reference/floresta_2020.md)

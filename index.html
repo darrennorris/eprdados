@@ -90,7 +90,7 @@
 <span><span class="va">rio_linhacentral_31976</span> <span class="op">&lt;-</span> <span class="va">rio_linhacentral</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_transform.html" class="external-link">st_transform</a></span><span class="op">(</span><span class="fl">31976</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Mapa</span></span>
+<span><span class="co"># Mapa com tmap v4</span></span>
 <span><span class="fu">tm_shape</span><span class="op">(</span><span class="va">floresta_2020_modal</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">tm_raster</span><span class="op">(</span>col.scale <span class="op">=</span> <span class="fu">tm_scale_categorical</span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"0"</span> <span class="op">=</span> <span class="st">"#E974ED"</span>, <span class="st">"1"</span> <span class="op">=</span><span class="st">"#129912"</span><span class="op">)</span>, </span>
 <span>                                             labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Não-floresta"</span>, <span class="st">"Floresta"</span><span class="op">)</span><span class="op">)</span>, </span>
